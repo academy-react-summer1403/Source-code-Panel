@@ -30,6 +30,8 @@ const DefaultRoute = "/login";
 const Reserv = lazy(() => import("../../pages/Reserv/Reserv"));
 const UserList = lazy(() => import("../../pages/User/UserList/UserList"));
 const UserPre = lazy(() => import("../../pages/User/UserPre/UserPre"));
+const AddUser = lazy(() => import("../../pages/User/AddUser/AddUser"))
+const EditUser = lazy(() => import("../../pages/User/EditUser/EditUser"))
 const Coment = lazy(() => import("../../pages/Comment/Coment"));
 const Home = lazy(() => import("../../pages/Home"));
 const CourseList = lazy(() => import("../../pages/Course/CourseList/CourseList"));
@@ -88,6 +90,14 @@ const Routes = [
   {
     path: "/Coment",
     element: <Coment />,
+  },
+  {
+    path: "/AddUser",
+    element: <AddUser />,
+  },
+  {
+    path: "/EditUser",
+    element: <EditUser />,
   },
   {
     path: "/login",
