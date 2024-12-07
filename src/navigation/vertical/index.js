@@ -73,4 +73,37 @@ export default [
     icon: <MessageCircle size={20} />,
     navLink: "/Coment",
   },
+
+  {
+    id: 'blog',
+    title: 'اخبار',
+    icon: <Circle size={12} />,
+    children: [
+      {
+        id: 'blogList',
+        title: 'لیست اخبار',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blog/list'
+      },
+      {
+        id: 'blogDetail',
+        title: 'جزئیات خبر',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blog/detail'
+      },
+      {
+        id: 'blogEdit',
+        title: 'ویرایش خبر',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blog/edit'
+      },
+      {
+        id: 'blogCreate',
+        title: 'ساخت خبر',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blog/create'
+      }
+    ]
+  },
+
 ];

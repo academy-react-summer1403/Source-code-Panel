@@ -30,6 +30,10 @@ const DefaultRoute = "/login";
 const Reserv = lazy(() => import("../../pages/Reserv/Reserv"));
 const UserList = lazy(() => import("../../pages/User/UserList/UserList"));
 const UserPre = lazy(() => import("../../pages/User/UserPre/UserPre"));
+const BlogList = lazy(() => import("../../pages/blog/list/index"));
+const BlogCreate = lazy(() => import("../../pages/blog/create/index"));
+const BlogDetails = lazy(() => import("../../pages/blog/details/index"));
+const BlogEdit = lazy(() => import("../../pages/blog/edit/index"));
 const Coment = lazy(() => import("../../pages/Comment/Coment"));
 const Home = lazy(() => import("../../pages/Home"));
 const CourseList = lazy(() => import("../../pages/Course/CourseList/CourseList"));
@@ -77,6 +81,31 @@ const Routes = [
     path: "/CoursePreview/:id",
     element: <CoursePreview />,
   },
+  {
+    path: '/pages/blog/list',
+    element: <BlogList />
+  },
+  {
+    path: '/pages/blog/create',
+    element: <BlogCreate />
+  },
+  {
+    path: '/pages/blog/detail/:id',
+    element: <BlogDetails />
+  },
+  {
+    path: '/pages/blog/detail',
+    element: <Navigate to='/pages/blog/detail/1' />
+  },
+  {
+    path: '/pages/blog/edit/:id',
+    element: <BlogEdit />
+  },
+  {
+    path: '/pages/blog/edit',
+    element: <Navigate to='/pages/blog/edit/1' />
+  },
+
   {
     path: "/CourseEdit",
     element: <CourseEdit />,
