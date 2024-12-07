@@ -30,10 +30,15 @@ const DefaultRoute = "/login";
 const Reserv = lazy(() => import("../../pages/Reserv/Reserv"));
 const UserList = lazy(() => import("../../pages/User/UserList/UserList"));
 const UserPre = lazy(() => import("../../pages/User/UserPre/UserPre"));
+<<<<<<< HEAD
 const BlogList = lazy(() => import("../../pages/blog/list/index"));
 const BlogCreate = lazy(() => import("../../pages/blog/create/index"));
 const BlogDetails = lazy(() => import("../../pages/blog/details/index"));
 const BlogEdit = lazy(() => import("../../pages/blog/edit/index"));
+=======
+const AddUser = lazy(() => import("../../pages/User/AddUser/AddUser"))
+const EditUser = lazy(() => import("../../pages/User/EditUser/EditUser"))
+>>>>>>> b2643d32c94ec1dac1dff77fafce5fa7d9ac6277
 const Coment = lazy(() => import("../../pages/Comment/Coment"));
 const Home = lazy(() => import("../../pages/Home"));
 const CourseList = lazy(() => import("../../pages/Course/CourseList/CourseList"));
@@ -117,6 +122,14 @@ const Routes = [
   {
     path: "/Coment",
     element: <Coment />,
+  },
+  {
+    path: "/AddUser",
+    element: <AddUser />,
+  },
+  {
+    path: "/EditUser",
+    element: <EditUser />,
   },
   {
     path: "/login",

@@ -59,6 +59,18 @@ export default [
         icon: <Circle size={12} />,
         navLink: "/UserPre",
       },
+      {
+        id: "AddUser",
+        title: "ساخت حساب کاربری",
+        icon: <Circle size={12} />,
+        navLink: "/AddUser",
+      },
+      {
+        id: "EditUser",
+        title: "ویرایش کاربر",
+        icon: <Circle size={12} />,
+        navLink: "/EditUser",
+      },
     ],
   },
   {
