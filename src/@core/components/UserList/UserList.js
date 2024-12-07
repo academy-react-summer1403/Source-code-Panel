@@ -74,6 +74,6 @@ export const Coursecolumns = [
         name: "وضعیت",
         minWidth: "150px",
         sortField: "active",
-        cell: (row) => <span>{row.active}</span>,
+        cell: (row) => <span>{row.active ? "فعال" : "غیر فعال"}</span>,
     },
 ];

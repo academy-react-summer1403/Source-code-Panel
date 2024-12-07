@@ -74,19 +74,6 @@ export default [
     ],
   },
   {
-    id: "Reserv",
-    title: "رزرو کننده ها",
-    icon: <User size={20} />,
-    navLink: "/Reserv",
-  },
-  {
-    id: "Coment",
-    title: "کامنت ها",
-    icon: <MessageCircle size={20} />,
-    navLink: "/Coment",
-  },
-
-  {
     id: 'blog',
     title: 'اخبار',
     icon: <Circle size={12} />,
@@ -116,6 +103,18 @@ export default [
         navLink: '/pages/blog/create'
       }
     ]
+  },
+  {
+    id: "Reserv",
+    title: "رزرو کننده ها",
+    icon: <User size={20} />,
+    navLink: "/Reserv",
+  },
+  {
+    id: "Coment",
+    title: "کامنت ها",
+    icon: <MessageCircle size={20} />,
+    navLink: "/Coment",
   },
 
 ];

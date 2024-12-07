@@ -98,7 +98,7 @@ const UserDetail = () => {
                                 </CardText>
                                 <CardText className="d-flex flex-row gap-2">
                                     <h3 className="mt-2 ">وضعیت:</h3>{" "}
-                                    <h5 className="mt-2">{data.active}</h5>
+                                    <h5 className="mt-2">{data.active ? "فعال" : "غیر فعال"}</h5>
                                 </CardText>
                             </CardColumns>
                             <div className="demo-inline-spacing">
